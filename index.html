@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MeterXX - Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" href="css/ui-tweaks.css" />
+    <link href="css/map.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">MeterXX</a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+          <a id="test-moving" href="#">Test Moving: Select Once to Begin/Refresh to Start Over</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="full-height">
+      <div id="map">
+        <li>
+        </li>
+      </div>
+      <div id="paypay">
+        <div class="Address">
+          Address: <span></span>
+        </div>
+        <div class="DayRateHour">
+          Day Rate: <span></span>
+        </div>
+        <div class="DayTimeLimit">
+          Day Time Limit: <span></span>
+        </div>
+        <div class="KioskId">
+          Kiosk Id: <span></span>
+        </div>
+        
+        <div class="time">
+          Time parked: <span>0:00:00</span>
+        </div>
+        <div class="money">
+          Money Spent: <span>$0.00</span>
+        </div>
+        <a class="btn btn-primary" id="start-meter">Start Meter</a>
+      </div>
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="leaflet/leaflet.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
